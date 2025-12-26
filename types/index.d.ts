@@ -1,4 +1,4 @@
-
+// --- END TYPE DEFINITIONS ---
 interface Resume {
     id: string;
     companyName?: string;
@@ -58,3 +58,18 @@ interface Job {
     requiredSkills: string[];
 }
 
+interface JobDetails {
+    city: string;
+    jobTitle: string;
+}
+
+interface RelevantJob {
+    title: string;
+    company: string;
+    url: string;
+}
+
+interface AIJobSearchResult {
+    searchQueryUsed: string;
+    jobsFound: RelevantJob[]; // Using the existing RelevantJob interface
+}
